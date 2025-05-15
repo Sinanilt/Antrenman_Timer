@@ -54,7 +54,7 @@ Yeni sürümlerde şunlar eklenecektir:
 
 ## 👤 Geliştirici
 
-📧 Geri bildirim veya katkı için [e-posta adresini] üzerinden ulaşabilirsiniz.
+📧 Geri bildirim veya katkı için iltersinan84@gmail.com üzerinden ulaşabilirsiniz.
 
 ---
 
