@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "sinan_ilter.s_time.app-mergeDebugResources-26:/values-port/values-port.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\HUAWEİ\\.gradle\\caches\\8.13\\transforms\\2d818a4ddf6196592895b2b8d3e32be1\\transformed\\appcompat-1.6.1\\res\\values-port\\values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
+        }
+    ]
+}

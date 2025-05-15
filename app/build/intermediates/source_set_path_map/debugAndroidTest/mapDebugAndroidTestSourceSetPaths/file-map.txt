@@ -1,0 +1,6 @@
+sinan_ilter.s_time.test.app-annotation-experimental-1.3.0-0 C:\Users\HUAWEİ\.gradle\caches\8.13\transforms\2abada9eda0f7f9e72c1f48bb5465975\transformed\annotation-experimental-1.3.0\res
+sinan_ilter.s_time.test.app-core-1.5.0-1 C:\Users\HUAWEİ\.gradle\caches\8.13\transforms\76c8cb8e440cadabf1526271529cff59\transformed\core-1.5.0\res
+sinan_ilter.s_time.test.app-androidTest-2 D:\s-time\app\build\generated\res\resValues\androidTest\debug
+sinan_ilter.s_time.test.app-mergeDebugAndroidTestResources-3 D:\s-time\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+sinan_ilter.s_time.test.app-mergeDebugAndroidTestResources-4 D:\s-time\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+sinan_ilter.s_time.test.app-debugAndroidTest-5 D:\s-time\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources

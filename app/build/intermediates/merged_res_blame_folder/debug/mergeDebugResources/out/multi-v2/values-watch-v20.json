@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "sinan_ilter.s_time.app-mergeDebugResources-26:/values-watch-v20/values-watch-v20.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\HUAWEİ\\.gradle\\caches\\8.13\\transforms\\2d818a4ddf6196592895b2b8d3e32be1\\transformed\\appcompat-1.6.1\\res\\values-watch-v20\\values-watch-v20.xml",
+                    "from": {
+                        "startLines": "2,5,8",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,214,385",
+                        "endLines": "4,7,10",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "209,380,553"
+                    }
+                }
+            ]
+        }
+    ]
+}

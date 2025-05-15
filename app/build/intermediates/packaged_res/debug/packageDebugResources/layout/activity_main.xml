@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp">
+
+    <!-- Başlık -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Antrenman Zamanlayıcısı"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:layout_marginBottom="32dp"
+        android:gravity="center"/>
+
+    <!-- Dairesel Progress ve Dijital Saat -->
+    <FrameLayout
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="32dp">
+
+        <sinan_ilter.s_time.CircularTimerView
+            android:id="@+id/circularTimer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/tvTimer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:textColor="#FFFFFF"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:gravity="center"/>
+    </FrameLayout>
+
+    <!-- Input Alanları -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="32dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilSetCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="#FFFFFF"
+            app:boxStrokeWidth="2dp"
+            app:boxCornerRadiusTopStart="48dp"
+            app:boxCornerRadiusTopEnd="48dp"
+            app:boxCornerRadiusBottomStart="48dp"
+            app:boxCornerRadiusBottomEnd="48dp"
+            android:layout_marginBottom="12dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etSetCount"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Toplam Set Sayısı"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#888888"
+                android:inputType="number"
+                android:background="@android:color/transparent"
+                android:fontFamily="sans-serif"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilRestBetweenSets"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Set Arası Dinlenme"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="#FFFFFF"
+                app:boxStrokeWidth="2dp"
+                app:boxCornerRadiusTopStart="48dp"
+                app:boxCornerRadiusTopEnd="48dp"
+                app:boxCornerRadiusBottomStart="48dp"
+                app:boxCornerRadiusBottomEnd="48dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etRestBetweenSets"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#888888"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="sans-serif"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnRestBetweenSetsMin"
+                android:layout_width="56dp"
+                android:layout_height="48dp"
+                android:text="DK"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#6200EE"
+                android:layout_marginStart="8dp"/>
+
+            <Button
+                android:id="@+id/btnRestBetweenSetsSec"
+                android:layout_width="56dp"
+                android:layout_height="48dp"
+                android:text="SN"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#222222"
+                android:layout_marginStart="4dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilRestAfterAllSets"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Tüm Setlerden Sonra Dinlenme"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="#FFFFFF"
+                app:boxStrokeWidth="2dp"
+                app:boxCornerRadiusTopStart="48dp"
+                app:boxCornerRadiusTopEnd="48dp"
+                app:boxCornerRadiusBottomStart="48dp"
+                app:boxCornerRadiusBottomEnd="48dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etRestAfterAllSets"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#888888"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="sans-serif"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnRestAfterAllSetsMin"
+                android:layout_width="56dp"
+                android:layout_height="48dp"
+                android:text="DK"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#6200EE"
+                android:layout_marginStart="8dp"/>
+
+            <Button
+                android:id="@+id/btnRestAfterAllSetsSec"
+                android:layout_width="56dp"
+                android:layout_height="48dp"
+                android:text="SN"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#222222"
+                android:layout_marginStart="4dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Butonlar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnStartWorkout"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:text="ANTRENMANA BAŞLA"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:background="@drawable/outline_dynamic"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btnNextSet"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:text="SETİ BİTİRDİM"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:background="@drawable/outline_dynamic"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnRestart"
+        android:layout_width="220dp"
+        android:layout_height="64dp"
+        android:text="BAŞLA"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:backgroundTint="#222222"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+</LinearLayout>
